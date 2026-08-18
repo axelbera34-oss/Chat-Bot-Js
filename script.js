@@ -2,11 +2,6 @@ const input =
 document.getElementById("apiInput");
 const button =
 document.getElementById("testAPI");
-
-button.addEventListener("click", async()=>{
-	const message = input.value;
-	console.log(message);
-
 const url = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4-2';
 const options = {
 	method: 'POST',
@@ -30,6 +25,11 @@ const options = {
 		web_access: false
 	})
 };
+button.addEventListener("click", async()=>{
+	const message = input.value;
+	console.log(message);
+
+
 
 try {
 	const response = await fetch(url, options);
