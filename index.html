@@ -1,22 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST</title>
-    <style>
-        body { font-family: Arial; max-width: 600px; margin: 50px auto; }
-        #result { margin-top: 20px; padding: 10px; background: #f0f0f0; }
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
     </style>
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
 </head>
-<body>
-    <h1>API Test</h1>
-    <input type="text" id="apiInput" placeholder="Entrez votre requête...">
-    <button id="testAPI">Tester l'API</button>
-    <div id="result"></div>
 
-    <script src="script.js">
-    </script>
+<body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/js/fontawesome.min.js" ></script>
+
+    <div class="dash flex absolute fixed w-70 h-224 bg-white pl-5 flex-col rounded-lg">
+
+        <div class="log text-bold text-xl">
+            Chat Bot
+        </div>
+
+        <div class="sect-a leading-10 flex flex-col mt-10">
+            <span class="h-10 w-65 rounded-lg">
+                <div class="">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                  <a href="index.html">New Chat</a>
+                </div>
+              
+            </span>
+           <span class=" h-10 w-65 mt-3 rounded-lg">
+              <i class="fa-regular fa-images"></i>
+               <a href="image.html">Images</a>
+            </span>
+            <span class="h-10 w-65  mt-3 rounded-lg">
+               <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="">Plugin</a>
+            </span>
+          <span class="h-10 w-65  mt-3 rounded-lg">
+              <i class="fa-regular fa-file"></i>
+               <a href="">Project</a>
+        </span>
+            </ul>
+        </div>
+    </div>
+
+    <div class="all-content w-312 ml-72 justify-center">
+
+
+        <div class="hero flex justify-center ">
+
+            <div class="flex flex-col mt-70 leading-12">
+            <label for="">Enter your text:</label>
+            <div class="flex items-center">
+                  <input type="text" id="search" placeholder="Chat Bot"
+                class="rounded-lg w-130 h-13 p-5 bg-white border border-none outline-none">
+                    <div class="w-10 h-10 items-center justify-center ml-4">
+                          <button type="button" id="btn" class="w-20 h-10 rounded-lg items-center  text-black flex justify-center">Submit</button>
+                    </div>
+                   
+               
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="cont" class="p-10 mt-15"></div>
+
+    </div>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="code.js"></script>
 </body>
 
 </html>
